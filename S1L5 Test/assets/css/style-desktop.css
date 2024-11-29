@@ -1,0 +1,158 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #393d41;
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.65rem;
+    text-align: center;
+}
+
+/* HEADER */
+header div img {
+    width: 150px;
+    background-color: black;
+    padding-block: 1.5rem;
+    padding-right: 140rem;
+    padding-left: 3rem;
+    margin-bottom: -7px;
+}
+
+header nav {
+    background-image: url(../images/banner.jpg);
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+header nav p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+header button {
+    color: white;
+    background-color: #f04c2f;
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    border-color: #f04c2f;
+    padding: 1rem 2rem;
+    padding-inline: 2rem;
+    border-radius: 5px;
+    width: 13rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+/* HEADINGS */
+h1,
+h3,
+h4 {
+    color: #25a2c3;
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    line-height: 1.5rem;
+    padding: 1rem;
+}
+
+h2,
+h5 {
+    color: white;
+}
+
+/* MAIN */
+article section {
+    padding: 3rem;
+}
+
+article img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 450px;
+    float: left;
+}
+
+/* ASIDE */
+aside {
+    max-width: 2000px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.aside {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    background-color: #fff;
+    width: 30%;
+    border: 1px solid #dee1e3;
+    border-radius: 8px;
+    float: left;
+    text-align: center;
+}
+
+.ceo {
+    background-color: #e22d0eed;
+    padding-block: 4rem;
+    line-height: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.ceo h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.ceo p {
+    color: white;
+    font-style: italic;
+}
+
+aside h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.aside p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+    color: #c8e7f0;
+    background-color: #25a2c3;
+    padding: 4rem;
+    line-height: 2.5rem;
+}
+
+footer h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+footer a {
+    color: #c8e7f0;
+}
