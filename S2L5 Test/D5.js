@@ -54,31 +54,40 @@ const cars = [
     trims: ['life', 'style', 'r-line'],
   },
 ]
-cars.forEach((car, index) => car.licensePlate = `CAR${1000 + index}`);
+cars.forEach(car => car.licensePlate = 'ABC123');
 console.log(cars);
 
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
-const carsObj = {
-  brand: 'Mario',
+cars.push({
+  brand: 'ABC ',
   model: '123',
-  color: 'yellow',
-  trims: ['456', '789'],}
-cars.push(carsObj)
+  color: 'white',
+  trims: ['base', 'hybrid']
+});
+cars.forEach(car => car.trims.pop());
+console.log(cars);
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
-const justTrims = []
-carsTrims = cars.trims[0]
-justTrims.push(0)
+const justTrims = [];
+cars.forEach(car => justTrims.push(car.trims[0]));
+console.log(justTrims);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
+cars.forEach(car => {
+  if (car.color[0] === 'b') {
+    console.log('Fizz');
+  } else {
+    console.log('Buzz');
+  }
+});
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
@@ -86,6 +95,11 @@ justTrims.push(0)
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
+let i = 0;
+while (numericArray[i] !== 66) {
+  console.log(numericArray[i]);
+  i++;
+}
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
@@ -93,4 +107,7 @@ const numericArray = [
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ['g', 'n', 'u', 'z', 'd']
-console.log()
+const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+const positions = charactersArray.map(char => alphabet.indexOf(char) + 1);
+console.log(positions);
